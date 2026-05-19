@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chris Sebastian Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">Chris Sebastian Media</a>
+      <nav class="header__nav">
+        <a href="#story">Our Story</a>
+        <a href="#services">Services</a>
+        <a href="work.html">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="header__toggle" id="headerToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="header__mobile" id="headerMobile">
+      <a href="#story" class="header__mobile-link">Our Story</a>
+      <a href="#services" class="header__mobile-link">Services</a>
+      <a href="work.html" class="header__mobile-link">Work</a>
+      <a href="#contact" class="header__mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!--
+        BACKGROUND VIDEO
+        Add your video: replace src below with your file, e.g. "brand_assets/hero.mp4"
+        Or use a YouTube embed in hero__player below
+      -->
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="brand_assets/WEBSITE VIDEO.mov" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">Chris Sebastian<br />Media</h1>
+      <p class="hero__sub">Authentic storytelling. Cinematic vision.</p>
+      <a href="#work" class="btn">View Our Work</a>
+    </div>
+  </section>
+
+  <!-- SHOWREEL / VIDEO PLAYER -->
+  <section class="showreel" id="showreel">
+    <div class="showreel__inner">
+      <p class="label">Showreel</p>
+      <h2 class="showreel__title">Stories Worth Telling</h2>
+      <!--
+        YOUTUBE PLAYER
+        Replace YOUTUBE_VIDEO_ID with your video ID from youtube.com/watch?v=XXXXXXXX
+      -->
+      <div class="showreel__player showreel__player--portrait">
+        <iframe
+          src="https://player.vimeo.com/video/1193672113?title=0&byline=0&portrait=0&dnt=1"
+          style="width:100%;height:100%;border:0;display:block;"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__header">
+        <p class="label">What We Create</p>
+        <h2 class="services__title">Full-service media<br />production</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-item">
+          <span class="service-item__num">01</span>
+          <h3 class="service-item__title">Video Production</h3>
+          <p class="service-item__body">Cinematic brand films, commercials, documentaries, and event coverage — shot and edited with intention.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-item__num">02</span>
+          <h3 class="service-item__title">Brand Storytelling</h3>
+          <p class="service-item__body">We help you define and communicate a brand narrative that goes beyond aesthetics and builds genuine connection.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-item__num">03</span>
+          <h3 class="service-item__title">Content Marketing</h3>
+          <p class="service-item__body">Strategic social media content, reels, and digital campaigns designed to grow your audience and drive real results.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-item__num">04</span>
+          <h3 class="service-item__title">Photography</h3>
+          <p class="service-item__body">Commercial and editorial photography — sun-drenched, authentic, and obsessed with the right detail.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-item__num">05</span>
+          <h3 class="service-item__title">Digital Advertising</h3>
+          <p class="service-item__body">High-converting video and photo ads for Google and Meta — built to stop the scroll and turn viewers into customers.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-item__num">06</span>
+          <h3 class="service-item__title">Post-Production</h3>
+          <p class="service-item__body">Color grading, motion graphics, sound design, and editing that elevates raw footage into polished content.</p>
+        </div>
+
+      </div>
+      <div class="services__cta">
+        <a href="#contact" class="btn">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story__row">
+        <div class="story__image">
+          <img src="brand_assets/IMG_7772.JPG" alt="Our Story" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="story__text">
+          <p class="label">Our Story</p>
+          <h2 class="story__title">Crafted with purpose and precision</h2>
+          <p class="story__body">Chris Sebastian Media is a full-service media production company built on a simple belief: every brand has a story that deserves to be told beautifully.</p>
+          <p class="story__body">We combine cinematic craft with strategic thinking to create content that doesn't just look good — it moves people. From concept to final cut, every detail is handled with the expertise that only comes from years in the field.</p>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="story__row story__row--reverse">
+        <a href="https://www.youtube.com/watch?v=yVZnd6XJXAA" target="_blank" rel="noopener" class="story__image work-card__yt-thumb">
+          <img src="brand_assets/Untitled design.jpg" alt="St. Barts Beyond the Luxury" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="work-card__play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+          </div>
+        </a>
+        <div class="story__text">
+          <p class="label">The Approach</p>
+          <h2 class="story__title">Authenticity over excess</h2>
+          <p class="story__body">We believe the best media feels effortless — because the hard work happens before the camera rolls. Strategy, story, and execution treated as one seamless process.</p>
+          <p class="story__body">The result is content that earns attention rather than demanding it.</p>
+          <a href="#work" class="btn btn--outline">See Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="work__header">
+        <p class="label">Selected Work</p>
+        <h2 class="work__title">Recent projects</h2>
+      </div>
+      <div class="work__grid">
+
+        <a class="work-card" href="https://www.youtube.com/watch?v=yVZnd6XJXAA" target="_blank" rel="noopener">
+          <div class="work-card__image work-card__yt-thumb">
+            <img src="brand_assets/Untitled design.jpg" alt="St. Barts Beyond the Luxury" />
+            <div class="work-card__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">YouTube</span>
+            <h3 class="work-card__title">St. Barts Beyond the Luxury</h3>
+          </div>
+        </a>
+
+        <a class="work-card" href="https://www.youtube.com/watch?v=VInp-szKr6g" target="_blank" rel="noopener">
+          <div class="work-card__image work-card__yt-thumb">
+            <img src="brand_assets/central-market-kejetia-kumasi.webp" alt="Shot for Advanced Spine Care" />
+            <div class="work-card__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">Commercial</span>
+            <h3 class="work-card__title">Shot for Advanced Spine Care</h3>
+          </div>
+        </a>
+
+        <a class="work-card" href="https://www.instagram.com/p/DUWeVOrjw_k/" target="_blank" rel="noopener">
+          <div class="work-card__image work-card__yt-thumb">
+            <img src="brand_assets/DJI_0713.jpg" alt="Recent Instagram Reel" />
+            <div class="work-card__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">Social Media</span>
+            <h3 class="work-card__title">Recent Instagram Reel</h3>
+          </div>
+        </a>
+
+        <a class="work-card" href="https://youtu.be/p-84CdpeMyI" target="_blank" rel="noopener">
+          <div class="work-card__image work-card__yt-thumb">
+            <img src="https://img.youtube.com/vi/p-84CdpeMyI/maxresdefault.jpg" alt="YouTube Episode for Sailing Virgins" />
+            <div class="work-card__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <span class="work-card__cat">YouTube</span>
+            <h3 class="work-card__title">YouTube Episode for Sailing Virgins</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat">
+          <span class="stat__num">10+</span>
+          <span class="stat__label">Years of experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">200+</span>
+          <span class="stat__label">Projects delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">50+</span>
+          <span class="stat__label">Brand partners</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label">Authentic storytelling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg">
+      <div class="contact__overlay"></div>
+    </div>
+    <div class="contact__content">
+      <p class="label label--light">Let's Work Together</p>
+      <h2 class="contact__title">Start your next project</h2>
+      <p class="contact__sub">Drop your email and we'll be in touch.</p>
+      <form class="contact__form" id="contactForm">
+        <input class="contact__input" type="text" name="name" placeholder="Your name" required />
+        <input class="contact__input" type="email" name="email" placeholder="Email address" required />
+        <textarea class="contact__input contact__textarea" name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+        <button type="submit" class="btn btn--light">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__name">Chris Sebastian Media</p>
+          <p class="footer__tagline">Authentic storytelling. Cinematic vision.</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#story">Our Story</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="Vimeo">Vi</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2026 Chris Sebastian Media. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

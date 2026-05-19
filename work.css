@@ -1,0 +1,155 @@
+/* ============================================================
+   WORK PAGE — work.css
+   ============================================================ */
+
+/* --- PAGE HEADER ------------------------------------------ */
+.work-page__header {
+  padding: 120px var(--pad) 48px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.work-page__title {
+  font-family: var(--font-mono);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--brown);
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+/* --- CORPORATE SUBTITLE ----------------------------------- */
+.corporate__sub {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* --- TABS ------------------------------------------------- */
+.work-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--tan);
+  margin-bottom: 0;
+}
+
+.work-tab {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 24px 12px 0;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+.work-tab:hover { color: var(--brown); }
+.work-tab.active {
+  color: var(--brown);
+  border-bottom-color: var(--brown);
+}
+
+/* --- SECTIONS --------------------------------------------- */
+.work-section {
+  padding: 3rem 0 6rem;
+}
+
+/* --- GRIDS ------------------------------------------------ */
+.work-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.work-page__grid--short {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* --- CARDS ------------------------------------------------ */
+.work-page__card {
+  display: block;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--cream);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s;
+  cursor: pointer;
+}
+.work-page__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(39,21,3,0.1);
+}
+.work-page__card--placeholder { opacity: 0.45; pointer-events: none; }
+
+/* --- THUMBNAILS ------------------------------------------- */
+.work-page__thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.work-page__thumb--portrait {
+  aspect-ratio: 9 / 16;
+}
+.work-page__thumb--square {
+  aspect-ratio: 1 / 1;
+}
+.work-page__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+  display: block;
+}
+.work-page__card:hover .work-page__thumb img { transform: scale(1.04); }
+
+/* --- INFO ------------------------------------------------- */
+.work-page__info {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.work-page__card-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--brown);
+  margin-top: 0.3rem;
+  line-height: 1.3;
+}
+
+/* --- AESTHETIC INTRO -------------------------------------- */
+.aesthetic__intro {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+/* --- ACTIVE NAV LINK -------------------------------------- */
+.header__nav--active {
+  color: var(--brown) !important;
+}
+
+/* --- RESPONSIVE ------------------------------------------- */
+@media (max-width: 992px) {
+  .work-page__grid { grid-template-columns: repeat(2, 1fr); }
+  .work-page__grid--short { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .work-page__grid { grid-template-columns: 1fr; }
+  .work-page__grid--short { grid-template-columns: repeat(2, 1fr); }
+  .work-page__title { font-size: clamp(3rem, 15vw, 5rem); }
+}

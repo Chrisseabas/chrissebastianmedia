@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate — Chris Sebastian Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="work.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Chris Sebastian Media</a>
+      <nav class="header__nav">
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#services">Services</a>
+        <a href="work.html">Work</a>
+        <a href="corporate.html" class="header__nav--active">Corporate</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="header__toggle" id="headerToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="header__mobile" id="headerMobile">
+      <a href="index.html#story" class="header__mobile-link">Our Story</a>
+      <a href="index.html#services" class="header__mobile-link">Services</a>
+      <a href="work.html" class="header__mobile-link">Work</a>
+      <a href="corporate.html" class="header__mobile-link">Corporate</a>
+      <a href="index.html#contact" class="header__mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="work-page__header">
+    <p class="label">Portfolio</p>
+    <h1 class="work-page__title">Corporate Work</h1>
+    <p class="corporate__sub">Professional video and photo production for businesses — internal communications, training, testimonials, and more.</p>
+  </div>
+
+  <!-- CORPORATE GRID -->
+  <section class="work-section">
+    <div class="container">
+      <div class="work-page__grid">
+
+        <!--
+          CARD TEMPLATE — copy and paste to add more videos:
+
+          YouTube link:
+          <a class="work-page__card" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noopener">
+            <div class="work-page__thumb">
+              <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Title" />
+              <div class="work-card__play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+              </div>
+            </div>
+            <div class="work-page__info">
+              <span class="work-card__cat">Corporate Video</span>
+              <h3 class="work-page__card-title">Video Title</h3>
+            </div>
+          </a>
+
+          Custom thumbnail:
+          <a class="work-page__card" href="YOUR_LINK" target="_blank" rel="noopener">
+            <div class="work-page__thumb">
+              <img src="brand_assets/your-thumb.jpg" alt="Title" />
+              <div class="work-card__play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+              </div>
+            </div>
+            <div class="work-page__info">
+              <span class="work-card__cat">Corporate Video</span>
+              <h3 class="work-page__card-title">Video Title</h3>
+            </div>
+          </a>
+        -->
+
+        <a class="work-page__card" href="https://www.youtube.com/watch?v=VInp-szKr6g" target="_blank" rel="noopener">
+          <div class="work-page__thumb">
+            <img src="brand_assets/central-market-kejetia-kumasi.webp" alt="Shot for Advanced Spine Care" />
+            <div class="work-card__play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+            </div>
+          </div>
+          <div class="work-page__info">
+            <span class="work-card__cat">Commercial</span>
+            <h3 class="work-page__card-title">Shot for Advanced Spine Care</h3>
+          </div>
+        </a>
+
+        <!-- Placeholder cards -->
+        <a class="work-page__card work-page__card--placeholder" href="#">
+          <div class="work-page__thumb work-card__image--placeholder">
+            <span>Coming Soon</span>
+          </div>
+          <div class="work-page__info">
+            <span class="work-card__cat">Corporate Video</span>
+            <h3 class="work-page__card-title">Project Title Here</h3>
+          </div>
+        </a>
+
+        <a class="work-page__card work-page__card--placeholder" href="#">
+          <div class="work-page__thumb work-card__image--placeholder">
+            <span>Coming Soon</span>
+          </div>
+          <div class="work-page__info">
+            <span class="work-card__cat">Corporate Video</span>
+            <h3 class="work-page__card-title">Project Title Here</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__name">Chris Sebastian Media</p>
+          <p class="footer__tagline">Authentic storytelling. Cinematic vision.</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="index.html#story">Our Story</a>
+          <a href="index.html#services">Services</a>
+          <a href="work.html">Work</a>
+          <a href="corporate.html">Corporate</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="Vimeo">Vi</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; 2026 Chris Sebastian Media. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="work.js"></script>
+</body>
+</html>
