@@ -250,6 +250,36 @@ ul { list-style: none; }
 }
 
 /* --- SHOWREEL --------------------------------------------- */
+/* --- SOCIAL BAR ------------------------------------------- */
+.social-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem var(--pad);
+  background: var(--sage);
+  border-bottom: 1px solid var(--tan);
+}
+
+.social-bar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--brown);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.social-bar__link:hover { opacity: 1; }
+.social-bar__link svg {
+  width: 22px;
+  height: 22px;
+}
+
 .showreel {
   background: var(--cream);
   padding: 5rem var(--pad);
