@@ -71,16 +71,9 @@ document.querySelectorAll(
 // --- CONTACT FORM ---
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
+  contactForm.addEventListener('submit', () => {
     const btn = contactForm.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message Sent!';
+    btn.textContent = 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      contactForm.reset();
-    }, 3500);
   });
 }
